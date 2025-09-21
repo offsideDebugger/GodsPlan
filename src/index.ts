@@ -10,4 +10,8 @@ app.get('/about', (c) => {
   return c.text('About Page Testing')
 })
 
+app.get('/user', (c) => {
+  return c.json({ name: 'John', age: 30 })
+})
+
 export default app
